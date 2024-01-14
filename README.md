@@ -42,5 +42,27 @@ go mod tidy
 
 And finally, use the Visual Studio Code to update the dependencies in the `go.mod` file. How? Just open the `go.mod` file and click on the `Go: Install/Update Tools` option that will appear at the top of the file.
 
+## Working with `gomock` and `mockgen`
+
+To work with `mockgen` in this project, open now the terminal, use the docker command below to enter the container:
+
+```bash
+docker exec -it app-product bash
+```
+
+After that, run the command below to install the `mockgen` tool:
+
+```bash
+mockgen -destination=application/mocks/application.go -source=application/product.go application
+```
+
+After that, if you open the `application` folder, you will see that the `mocks` folder has been created with the `application.go` file inside it.
+
+And to install the dependencies, run the command below:
+
+```bash
+go mod tidy
+```
+
 
 
