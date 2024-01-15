@@ -20,6 +20,12 @@ After that, for you to enter the container and be able to execute Sequelize comm
 docker exec -it app-product bash
 ```
 
+> p.s: sometimes will be necessary to install some dependencies using the root user. To do that, just run the command below:
+
+```bash
+docker exec -it -u root app-product bash
+```
+
 If the message below appears:
 
 ```bash
