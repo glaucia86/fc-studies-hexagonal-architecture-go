@@ -21,11 +21,11 @@ var Db *sql.DB
 func SetUp() {
 	// in this case, we are using the sqlite3 database and in memory
 	Db, _ = sql.Open("sqlite3", ":memory:")
-	CreateTable(Db)
-	CreateProduct(Db)
+	createTable(Db)
+	createProduct(Db)
 }
 
-func CreateTable(db *sql.DB) {
+func createTable(db *sql.DB) {
 	table := `CREATE TABLE products ("id" string, "name" string, "price" float, "status" string);`
 
 	stmt, err := db.Prepare(table)
@@ -36,7 +36,7 @@ func CreateTable(db *sql.DB) {
 	stmt.Exec()
 }
 
-func CreateProduct(db *sql.DB) {
+func createProduct(db *sql.DB) {
 	insert := `INSERT INTO products VALUES ("abc", "Product Test",0,"disabled");`
 
 	stmt, err := db.Prepare(insert)
