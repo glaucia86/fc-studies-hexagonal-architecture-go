@@ -1,7 +1,7 @@
 /**
  * file: adapters/db/product_test.go
  * description: file responsible for the
- * data: 16/01/2024
+ * data: 01/16/2024
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
 
