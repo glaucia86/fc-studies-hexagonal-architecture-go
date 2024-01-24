@@ -70,5 +70,33 @@ And to install the dependencies, run the command below:
 go mod tidy
 ```
 
+## Cobra Generator
+
+To work with `cobra` in this project, open now the terminal, use the docker command below to enter the container:
+
+```bash
+docker exec -it -u root app-product bash
+```
+
+And then run the command below to install the `cobra` tool:
+
+```bash
+go get -u github.com/spf13/cobra/cobra
+```
+
+After that, run the command below to create a new command:
+
+```bash
+cobra-cli init
+```
+
+Now, if you want to add a new Product, use the command below:
+
+```bash
+go run main.go cli -a=create -n="Product CLI" -p=35.0
+```
+
+
+
 
 
