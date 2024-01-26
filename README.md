@@ -96,7 +96,9 @@ Now, if you want to add a new Product, use the command below:
 go run main.go cli -a=create -n="Product CLI" -p=35.0
 ```
 
+Now, if you want to list all Products, use the command below:
 
-
-
+```bash
+ go run main.go cli -a=get --id=<include-product-id>
+```
 
