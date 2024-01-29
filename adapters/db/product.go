@@ -1,7 +1,7 @@
 /**
  * file: adapters/db/product.go
  * description: file responsible for the db layer of the application.
- * data: 16/01/2024
+ * data: 01/16/2024
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
 

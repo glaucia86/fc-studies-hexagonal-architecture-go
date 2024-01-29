@@ -1,7 +1,7 @@
 /**
  * file: web/server/server.go
  * description: file responsible for the server layer of the application.
- * data: 28/01/2024
+ * data: 01/28/2024
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
 
