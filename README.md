@@ -102,3 +102,10 @@ Now, if you want to list all Products, use the command below:
  go run main.go cli -a=get --id=<include-product-id>
 ```
 
+Now to run the web server using the Cobra command, run the command below:
+
+```bash
+go run main.go http
+```
+
+And open the browser at the address: `http://localhost:9000/198a2d0d-7ac7-48de-9f3a-d57e0809909f`
